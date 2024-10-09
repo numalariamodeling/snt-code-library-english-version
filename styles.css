@@ -114,7 +114,7 @@ h1 ~ pre, h2 ~ pre, h3 ~ pre, h4 ~ pre, h5 ~ pre, h6 ~ pre {
     top: 10px;
     right: 10px;
     padding: 5px 10px;
-    background-color: none;
+    background-color: black;
     color: white;
     border: none;
     border-radius: 4px;
@@ -181,8 +181,8 @@ button {
 .text-button {
     background: none;                /* Remove background */
     border: none;                    /* Remove border */
-    color: blue;                     /* Make the text blue */
-    text-decoration: underline;       /* Underline text */
+    color: black;                     /* Make the text blue */
+    text-decoration: none;       /* Underline text */
     cursor: pointer;                 /* Show pointer on hover */
     font-size: 16px;                 /* Adjust font size */
     padding: 0;                      /* Remove default padding */
