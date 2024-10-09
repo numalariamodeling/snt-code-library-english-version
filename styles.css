@@ -81,13 +81,12 @@ body {
 
 /* Style for the code block */
 pre {
-    background-color: #F2F2F3;
+    background-color: black;
     padding: 10px;
     overflow: auto;
     position: relative; /* Add position relative for button positioning */
     width: 700px;
-    
-    
+    color: white;
     
 }
 
@@ -182,7 +181,7 @@ button {
 .text-button {
     background: none;                /* Remove background */
     border: none;                    /* Remove border */
-    color: #AADEE9;                     /* Make the text blue */
+    color: blue;                     /* Make the text blue */
     text-decoration: underline;       /* Underline text */
     cursor: pointer;                 /* Show pointer on hover */
     font-size: 16px;                 /* Adjust font size */
