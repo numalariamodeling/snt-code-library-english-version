@@ -81,7 +81,7 @@ body {
 
 /* Style for the code block */
 pre {
-    background-color: lightgray;
+    background-color: #F2F2F3;
     padding: 10px;
     overflow: auto;
     position: relative; /* Add position relative for button positioning */
@@ -120,6 +120,7 @@ h1 ~ pre, h2 ~ pre, h3 ~ pre, h4 ~ pre, h5 ~ pre, h6 ~ pre {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button {
