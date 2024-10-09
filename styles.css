@@ -115,7 +115,7 @@ h1 ~ pre, h2 ~ pre, h3 ~ pre, h4 ~ pre, h5 ~ pre, h6 ~ pre {
     top: 10px;
     right: 10px;
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #AADEE9;
     color: white;
     border: none;
     border-radius: 4px;
@@ -137,7 +137,7 @@ button {
 }
 
 .menu-link {
-    color: blue;
+    color: #AADEE9;
     text-decoration: none; /* This removes the underline */    
 }
 
@@ -181,7 +181,7 @@ button {
 .text-button {
     background: none;                /* Remove background */
     border: none;                    /* Remove border */
-    color: blue;                     /* Make the text blue */
+    color: #AADEE9;                     /* Make the text blue */
     text-decoration: underline;       /* Underline text */
     cursor: pointer;                 /* Show pointer on hover */
     font-size: 16px;                 /* Adjust font size */
