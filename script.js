@@ -149,7 +149,7 @@ def visualize_shapefile(shapefile, variable):
 
 
             <h4 id="sampleR">Sample results</h4>
-            MAP_PYTHON.png
+           
         `,
 
         
