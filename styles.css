@@ -190,9 +190,12 @@ pre {
     color: #47B5FF; /* Color when selected */
 }
 
-.text-button:hover {
+.fixed-buttons .text-button.active {
     color: #47B5FF; /* Color when selected */
 }
+
+
+
 
 .fixed-buttons {
     display: flex;         /* Use flexbox layout */
