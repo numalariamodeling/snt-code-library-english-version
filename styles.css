@@ -195,8 +195,6 @@ pre {
 }
 
 
-
-
 .fixed-buttons {
     display: flex;         /* Use flexbox layout */
     flex-direction: column; /* Stack buttons vertically */
