@@ -67,7 +67,7 @@ install.packages(c("sf", "ggplot2", "dplyr"))
             <pre><button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here --><code>            
 # Load necessary libraries
 library(sf)
-library(dplyr)
+library(dplyr)   
 library(ggplot2)
             </code></pre>
             <p>This step makes the functions from these libraries available for use in your script.</p>   
