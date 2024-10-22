@@ -23,71 +23,73 @@ As SNT matures, more quality assurance is needed such that NMCPs can be confiden
 
 
             <h3>Target audience</h3>
-            <p>Anyone doing this kind of work. We assume some basic knowledge of Python, some understanding of the data, and a strong connection to the NMCP.</p>
+            <p>Anyone doing this kind of work. We assume some basic knowledge of R, some understanding of the data, and a strong connection to the NMCP.</p>
 
             <h3>Scope</h3>
             <p>All analysis steps of SNT up to but not including mathematical modeling; some related analysis.</p>
         `,
 
         shapefiles: `
-        
-           
-            <div class="fixed-buttons">
-                
-                <button class="text-button" onclick="scrollToSection('onthispage')">On this page:</button>
-                <button class="text-button" onclick="scrollToSection('stepByStep')">Step-by-step</button>
-                <button class="text-button" onclick="scrollToSection('sampleR')">Sample results</button>
-                <button class="text-button" onclick="scrollToSection('fullCode')">Full code</button>
+            
+            <div class="fixed-buttons id="fixedButtons">
+                <button class="text-button">On this page:</button>
+                <button class="text-button" data-section="stepByStep" onclick="scrollToSection('stepByStep')">Step-by-step</button>
+                <button class="text-button" data-section="fullCode" onclick="scrollToSection('fullCode')">Full code</button>
+                <button class="text-button" data-section="sampleR" onclick="scrollToSection('sampleR')">Sample results</button>
             </div>
 
             <h5>A. Data Assembly and Management/Shapefiles</h5>
             <h3 style="color: #47B5FF;">Shapefiles</h3>
-            <p><em>This section explains the workflow of importing and managing shapefiles using Python.</em></p>
+            <p><em>This section explains the workflow of importing and managing shapefiles using R.</em></p>
 
             <div class="round-buttons">
-                <button class="rect-button" onclick="window.location.href='https://';">View py EN</button>
-                <button class="rect-button" onclick="window.location.href='https://';">View R FR</button>
-                <button class="rect-button" onclick="window.location.href='https://';">View py FR</button>
+                <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
+                <button class="rect-button" onclick="window.location.href='https://example.com/button2';">View R FR</button>
+                <button class="rect-button" onclick="window.location.href='https://example.com/button3';">View R FR</button>
+                <button class="rect-button" onclick="window.location.href='https://example.com/button2';">View St FR</button>
+                <button class="rect-button" onclick="window.location.href='https://example.com/button3';">View St EN</button>
             </div>
             
             <h4 id="stepByStep">Step-by-step guide</h4>
             <h5 style="color: #ADD8E6;">Step 1: Install Necessary Libraries</h5>
             
-            <p>Before starting, ensure you have the required Python packages installed.</p>
+            <p>Before starting, ensure you have the required R packages installed.</p>
             <p>This can be done using the following code:</p>
             <pre><code>
 # Install necessary libraries
 
-pip install geopandas matplotlib pandas      
+install.packages(c("sf", "ggplot2", "dplyr"))    
             </code><button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here --></pre>
-            <p>This code installs the <code>geopandas</code> package for handling spatial data, <code>matplotlib</code> for data visualization, and <code>pandas</code> for data manipulation.</p>
+            <p>This code installs the <code>sf</code> package for handling spatial data, <code>ggplot2</code> for data visualization, and <code>dplyr</code> for data manipulation.</p>
           
             <h5 style="color: #ADD8E6;">Step 2: Load Necessary Libraries</h5>
-            <p>After installing the libraries, you need to load them into your Python environment:</p>
+            <p>After installing the libraries, you need to load them into your R environment:</p>
             <pre><button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here --><code>            
 # Load necessary libraries
-import geopandas as gpd
-import pandas as pd
-import matplotlib.pyplot as plt
+library(sf)
+library(dplyr)
+library(ggplot2)
             </code></pre>
             <p>This step makes the functions from these libraries available for use in your script.</p>   
             <h5 style="color: #ADD8E6;">Step 3: Import Shapefiles</h5>
-            <p>You can import shapefiles using the <code>read_file</code> function from the <code>geopandas</code> package. Here’s a function to do that:</p>
+            <p>You can import shapefiles using the <code>st_read</code> function from the <code>sf</code> package. Here’s a function to do that:</p>
             <pre><button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here --><code>
 # Import Shapefiles
-def import_shapefile(filepath):
-    shapefile = gpd.read_file(filepath)  # Read the shapefile
-    return shapefile  # Return the loaded shapefile
+import_shapefile <- function(filepath) {
+    shapefile <- st_read(filepath)  # Read the shapefile
+    return(shapefile)  # Return the loaded shapefile
+}
             </code></pre>
             <p>This function takes a file path as input, reads the shapefile, and returns it as a spatial object.</p>     
             <h5 style="color: #ADD8E6;">Step 4: Rename and Match Names</h5>
             <p>Sometimes, the columns in your shapefile may need to be renamed for clarity or to match other datasets. You can do this as follows:</p>
             <pre><button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here --><code>
 # Rename and Match Names
-def rename_shapefile_columns(shapefile, new_names):
-    shapefile.columns = new_names  # Rename columns
-    return shapefile  # Return the renamed shapefile
-            </code><button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here --></pre>
+rename_shapefile_columns <- function(shapefile, new_names) {
+    colnames(shapefile) <- new_names  # Rename columns
+    return(shapefile)  # Return the renamed shapefile
+}
+            </code></pre>
             <p>This function takes a shapefile and a list of new names, renaming the columns accordingly.</p>
 
           
@@ -95,20 +97,23 @@ def rename_shapefile_columns(shapefile, new_names):
             <p>Link your shapefile to relevant scales or metadata by merging it with another data frame:</p>
             <pre><button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here --><code>
 # Link Shapefiles to Relevant Scales
-def link_shapefiles_to_scales(shapefile, scales_df, link_col):
-    linked_shapefile = shapefile.merge(scales_df, on=link_col)  # Merge shapefile with scales
-    return linked_shapefile  # Return the linked shapefile
+link_shapefiles_to_scales <- function(shapefile, scales_df, link_col) {
+    linked_shapefile <- merge(shapefile, scales_df, by = link_col)  # Merge shapefile with scales
+    return(linked_shapefile)  # Return the linked shapefile
+}
             </code></pre>
             <p>This function performs a merge between the shapefile and a data frame containing scale information based on a specified linking column.</p>
             <h5 style="color: #ADD8E6;">Step 6: Visualizing Shapefiles and Making Basic Maps</h5>
-            <p>Finally, you can visualize the shapefile using <code>matplotlib</code> and <code>geopandas</code>. Here’s a function to do that:</p>
+            <p>Finally, you can visualize the shapefile using <code>ggplot2</code> and <code>sf</code>. Here’s a function to do that:</p>
             <pre><button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here --><code>
 # Visualizing Shapefiles and Making Basic Maps
-def visualize_shapefile(shapefile, variable):
-    shapefile.plot(column=variable, cmap='viridis', legend=True)
-    plt.title(f'Shapefile Visualization: {variable}')
-    plt.show()
-            </code><button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here --></pre>
+visualize_shapefile <- function(shapefile, variable) {
+    ggplot(data = shapefile) +
+        geom_sf(aes_string(fill = variable)) +
+        scale_fill_viridis_c() +
+        ggtitle(paste('Shapefile Visualization:', variable))
+}
+            </code></pre>
             <p>This function creates a simple map visualization using the spatial data. Replace <code>variable</code> with the name of the variable you want to visualize in the fill aesthetic.</p>
 
             <h3 id="fullCode">Full code</h3>
@@ -116,52 +121,48 @@ def visualize_shapefile(shapefile, variable):
             <pre id="codeBlock">
                 <code>
 # Install necessary libraries
-pip install geopandas matplotlib pandas
+install.packages(c("sf", "ggplot2", "dplyr"))
 
 # Load necessary libraries
-import geopandas as gpd
-import pandas as pd
-import matplotlib.pyplot as plt
+library(sf)
+library(dplyr)
+library(ggplot2)
 
 # Import Shapefiles
-def import_shapefile(filepath):
-    shapefile = gpd.read_file(filepath)  # Read the shapefile
-    return shapefile  # Return the loaded shapefile
+import_shapefile <- function(filepath) {
+    shapefile <- st_read(filepath)  # Read the shapefile
+    return(shapefile)  # Return the loaded shapefile
+}
 
 # Rename and Match Names
-def rename_shapefile_columns(shapefile, new_names):
-    shapefile.columns = new_names  # Rename columns
-    return shapefile  # Return the renamed shapefile
+rename_shapefile_columns <- function(shapefile, new_names) {
+    colnames(shapefile) <- new_names  # Rename columns
+    return(shapefile)  # Return the renamed shapefile
+}
 
 # Link Shapefiles to Relevant Scales
-def link_shapefiles_to_scales(shapefile, scales_df, link_col):
-    linked_shapefile = shapefile.merge(scales_df, on=link_col)  # Merge shapefile with scales
-    return linked_shapefile  # Return the linked shapefile
+link_shapefiles_to_scales <- function(shapefile, scales_df, link_col) {
+    linked_shapefile <- merge(shapefile, scales_df, by = link_col)  # Merge shapefile with scales
+    return(linked_shapefile)  # Return the linked shapefile
+}
 
 # Visualizing Shapefiles and Making Basic Maps
-def visualize_shapefile(shapefile, variable):
-    shapefile.plot(column=variable, cmap='viridis', legend=True)
-    plt.title(f'Shapefile Visualization: {variable}')
-    plt.show()
+visualize_shapefile <- function(shapefile, variable) {
+    ggplot(data = shapefile) +
+        geom_sf(aes_string(fill = variable)) +
+        scale_fill_viridis_c() +
+        ggtitle(paste('Shapefile Visualization:', variable))
+}
                 </code>
                 <button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here -->
             </pre>
 
+            <h3 id="sampleR">Sample results</h3>
+            <img src="https://raw.githubusercontent.com/numalariamodeling/snt-code-library-english-version/a204dc53be5209fc170acbfbb5db8900930a80fa/MAP_PYTHON.png" alt="Sample Results">;
+            
 
-            <h4 id="sampleR">Sample results</h4>
-           
-     
-           
-        `,  
+        `,
 
- 
-
-
-
-
-
-        
-        
     };
 
     document.getElementById('content').innerHTML = content[page];
@@ -185,18 +186,48 @@ window.onload = function() {
     if (currentUrl.includes('#hf')) {
         loadContent('hf');
     }
-
-
 };
 
 
-// Scroll to the relevant section when buttons are clicked
+
+// Function to scroll to the section when the button is clicked
 function scrollToSection(sectionId) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-        element.scrollIntoView({ behavior: 'auto' });
+    // Scroll to the specific section smoothly
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'auto' });
+    
+    // Remove the 'active' class from all buttons
+    document.querySelectorAll('.text-button').forEach(button => button.classList.remove('active'));
+    
+    // Add the 'active' class to the clicked button
+    document.querySelector(`[data-section="${sectionId}"]`).classList.add('active');
+}
+
+// Function to check which section is at the top and update the active button
+function handleScroll() {
+    const sections = ['stepByStep', 'sampleR', 'fullCode'];
+    let activeSection = null;
+
+    sections.forEach(sectionId => {
+        const section = document.getElementById(sectionId);
+        const rect = section.getBoundingClientRect();
+        
+        // Check if the section is exactly at the top of the viewport
+        if (rect.top <= 0 && rect.bottom >= 0) {
+            activeSection = sectionId;
+        }
+    });
+
+    // Remove the 'active' class from all buttons
+    document.querySelectorAll('.text-button').forEach(button => button.classList.remove('active'));
+
+    // Add the 'active' class to the button corresponding to the section at the top
+    if (activeSection) {
+        document.querySelector(`[data-section="${activeSection}"]`).classList.add('active');
     }
-}       
+}
+
+// Attach the scroll event listener to update the active button based on scroll position
+window.addEventListener('scroll', handleScroll);
 
 
 function copyCode() {
@@ -207,8 +238,6 @@ function copyCode() {
         console.error('Error copying text: ', err);
     });
 }
-
-
 
 document.querySelector('.search-bar').addEventListener('input', function() {
     const query = this.value.toLowerCase();
@@ -224,8 +253,6 @@ document.querySelector('.search-bar').addEventListener('input', function() {
     });
 });
 
-
-
 // Function to handle link selection
 function selectLink(selectedLink) {
     // Remove 'selected' class from all links
@@ -237,8 +264,6 @@ function selectLink(selectedLink) {
     selectedLink.classList.add('selected');
 }
 
-
-
 function toggleMenu(menuHeader) {
     var submenu = menuHeader.nextElementSibling; // Get the submenu
     if (submenu.style.display === "none" || submenu.style.display === "") {
@@ -249,8 +274,6 @@ function toggleMenu(menuHeader) {
         menuHeader.querySelector('.menu-indicator').textContent = '>'; // Change indicator back to '>'
     }
 }
-
-
 
 // Add styles for rectangular buttons
 const styles = `
@@ -276,4 +299,62 @@ const styles = `
 const styleSheet = document.createElement("style");
 styleSheet.type = "text/css";
 styleSheet.innerText = styles;
-document.head.appendChild(styleSheet);
+document.head.appendChild(styleSheet);     
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const button = document.querySelector('.fixed-buttons');
+
+    function changeButtonColorOnScroll() {
+        if (window.scrollY > 50) { // Change '100' to the scroll distance you want
+            button.classList.add('scrolled');
+        } else {
+            button.classList.remove('scrolled');
+        }
+    }
+
+    window.addEventListener('scroll', changeButtonColorOnScroll);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.querySelector('.text-button');
+    const headings = document.querySelectorAll('h3'); // All headings to track
+
+    function updateButtonState() {
+        // Get the current scroll position
+        const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+        // Loop through all headings
+        headings.forEach((heading) => {
+            const headingTop = heading.offsetTop;
+
+            if (scrollPosition >= headingTop) {
+                button.classList.add('active');
+            } else {
+                button.classList.remove('active');
+            }
+        });
+    }
+
+    // Add scroll event listener
+    window.addEventListener('scroll', updateButtonState);
+    updateButtonState(); // Initial call in case already scrolled
+});
