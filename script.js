@@ -40,7 +40,8 @@ As SNT matures, more quality assurance is needed such that NMCPs can be confiden
 
             <h5>A. Data Assembly and Management/Shapefiles</h5>
             <h3 style="color: #47B5FF;">Shapefiles</h3>
-            <p><em>A shapefile is a popular geospatial vector data format used to store geographic features and their attributes. We use shapefiles to represent geographical data, such as points, lines, and polygons, for spatial analysis and mapping. Shapefiles are used when working with spatial data in GIS, R, Python, etc. For more information, please visit: https://en.wikipedia.org/wiki/Shapefile.".</em></p>
+            <p><em>A shapefile is a popular geospatial vector data format used to store geographic features and their attributes. We use shapefiles to represent geographical data, such as points, lines, and polygons, for spatial analysis and mapping. Shapefiles are used when working with spatial data in GIS, R, Python, etc.</em></p>
+            <p>For more information, please visit: https://en.wikipedia.org/wiki/Shapefile</p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://numalariamodeling.github.io/snt-code-library-french-version/#shapefiles';">View R FR</button>
