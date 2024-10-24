@@ -58,20 +58,19 @@ As SNT matures, more quality assurance is needed such that NMCPs can be confiden
             <pre><code>
 # Install necessary libraries
 
-install.packages(c("sf", "ggplot2", "dplyr"))    
+install.packages(c("sf", "ggplot2"))    
             </code><button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here --></pre>
-            <p>This code installs the <code>sf</code> package for handling spatial data, <code>ggplot2</code> for data visualization, and <code>dplyr</code> for data manipulation.</p>
+            <p>This code installs the <code>sf</code> package for handling spatial data and <code>ggplot2</code> for data visualization</p>
           
-            <h5 style="color: #ADD8E6;">Step 2: Load Necessary Libraries</h5>
+            <h5 style="color: #ADD8E6;">Step 2: Load the packages</h5>
             <p>After installing the libraries, you need to load them into your R environment:</p>
             <pre><button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here --><code>            
 # Load necessary libraries
 library(sf)
-library(dplyr)
 library(ggplot2)
             </code></pre>
             <p>This step makes the functions from these libraries available for use in your script.</p>   
-            <h5 style="color: #ADD8E6;">Step 3: Import Shapefiles</h5>
+            <h5 style="color: #ADD8E6;">Step 3: Load the shapefiles</h5>
             <p>You can import shapefiles using the <code>st_read</code> function from the <code>sf</code> package. Here’s a function to do that:</p>
             <pre><button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here --><code>
 # Import Shapefiles
