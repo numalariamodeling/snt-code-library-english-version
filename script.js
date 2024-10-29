@@ -38,8 +38,8 @@ As SNT matures, more quality assurance is needed such that NMCPs can be confiden
                 <button class="text-button" data-section="sampleR" onclick="scrollToSection('sampleR')">Sample results</button>
             </div>
 
-            <h5>A. Data Assembly and Management/Shapefiles</h5>
-            <h3 style="color: #47B5FF;">Shapefiles</h3>
+            <h5>Data Assembly and Management / Shapefiles</h5>
+            <h2 style="color: #47B5FF;">Shapefiles</h2>
             <p><em>A shapefile is a popular geospatial vector data format used to store geographic features and their attributes. We use shapefiles to represent geographical data, such as points, lines, and polygons, for spatial analysis and mapping. Shapefiles are used when working with spatial data in GIS, R, Python, etc.</em></p>
             <p>For more information, please visit: https://en.wikipedia.org/wiki/Shapefile</p>
 
