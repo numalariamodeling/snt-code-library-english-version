@@ -1,5 +1,5 @@
 body {
-    font-family: 'Hubot Sans', sans-serif; /* Changed to Hubot Sans */
+    font-family: 'Verdana', sans-serif; /* Changed to Hubot Sans */
     margin: 0;
     display: flex;
     height: 100vh; /* Set the body to take up the full viewport height */
@@ -47,8 +47,8 @@ body {
     cursor: pointer;
     text-align: center;
     font-size: 16px; /* Adjust font size */
-    font-weight: bold;
-    underline: none;
+    font-weight: normal;
+    text-decoration: none;
 }
 
 
@@ -80,7 +80,8 @@ body {
 
 
 .menu {
-    margin: 10px 0;
+    margin: 5px 0;
+    padding: 0;
 }
 
 .submenu {
@@ -91,7 +92,7 @@ body {
 }
 
 .submenu li {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .menu-header {
@@ -111,11 +112,14 @@ body {
 .menu-link {
     color: black;
     text-decoration: none; /* This removes the underline */
+    line-height: 0;
+    margon: 0;
+    padding: 0;
+    font-family: Verdana;
+    
 }
 
-.menu-link.selected {
-    color: #47B5FF; /* Color when selected */
-}
+
 
 .main-content-container {
     display: flex;
@@ -167,7 +171,7 @@ pre {
     top: 10px;
     right: 10px;
     padding: 5px 10px;
-    background-color: #47B5FF;
+    background-color: #AADEE9;
     color: black;
     border-radius: 4px;
     cursor: pointer;
@@ -183,20 +187,58 @@ pre {
     padding: 0;                      /* Remove default padding */
     margin-right: 10px;              /* Space between buttons */
     text-align: left; 
+    font-family: Verdana;
+    
+    position: sticky;
+    top: 10px; /* Adjust this value to control where the button sticks on the page */
+    z-index: 100; 
 }
+
 
 
 .text-button.selected {
-    color: #47B5FF; /* Color when selected */
+    color: #47B5FF;
 }
 
-.text-button:hover {
-    color: #47B5FF; /* Color when selected */
+
+.submenu, .submenu-inner {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0; /* Aligns submenus with parent items */
+  color: black;
 }
 
-.text-button.scrolled {
-    color: #47B5FF; /* Change text color */
+.submenu-inner {
+  display: none; /* Hide inner submenus by default */
+  margin-left: 20px; /* Indent to show hierarchy */
+  color: black;
 }
+
+.submenu > li:hover > .submenu-inner {
+  display: block; /* Show the inner submenu on hover of parent item */
+}
+
+.menu-link, .submenu-link {
+  text-decoration: none; /* Remove underlines from links */
+  color: black; /* Set link text color */
+}
+
+
+
+submenu-inner:active {
+    color: #47B5FF;
+}
+
+ .submenu-link {
+    color: black; /* Default color when inactive */
+    text-decoration: none; /* Remove underline if needed */
+  }
+
+  .submenu-link.active {
+    color: #47B5FF; /* Color when selected or clicked */
+  }
+
+
+
 
 .fixed-buttons {
     display: flex;         /* Use flexbox layout */
@@ -207,6 +249,7 @@ pre {
     right: 20px;                     /* Adjust as needed */
     z-index: 1000;                   /* Ensure buttons are on top */
     transition: top 0.3s ease;  /* Smooth transition effect */
+    font_family: Verdana;
 }
 
 .fixed-buttons.scrolled {
@@ -254,6 +297,26 @@ button {
     color: black; /* Default color */
     transition: color 0.3s ease;
 }
+
+
+ul {
+
+  margin: 0;
+  padding: 0;
+}
+
+li {
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.sidebar-title {
+  font-weight: normal;
+}
+
+
 
 /* Add media queries for better responsiveness */
 @media (min-width: 1024px) {
