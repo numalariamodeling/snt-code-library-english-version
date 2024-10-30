@@ -43,7 +43,7 @@ As SNT matures, more quality assurance is needed such that NMCPs can be confiden
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / View shapefile data</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">View shapefile data</h2>
-            <p><em>This section explains the workflow of importing and managing shapefiles using R.</em></p>
+            <p><em>Viewing shapefile data is often the first step when working with spatial datasets. It involves loading and inspecting the spatial features and attributes to understand the structure and details of the data.</em></p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
@@ -126,7 +126,7 @@ print(gdf)
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Map by manual color coding</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">Map by manual color coding</h2>
-            <p><em>This section explains the workflow of importing and managing shapefiles using R.</em></p>
+            <p><em>Manual color coding allows specific colors to be assigned to categories or ranges, providing more control over how the data is visually represented. This approach can be used to highlight specific data or create a consistent color scheme for presentation.</em></p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
@@ -161,7 +161,7 @@ print(gdf)
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Basic plotting</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">Basic plotting</h2>
-            <p><em>This section explains the workflow of importing and managing shapefiles using R.</em></p>
+            <p><em> Basic map plotting involves visualizing geographic data to understand spatial patterns. It is useful for plotting polygons, lines, and points to give a general idea of the dataset..</em></p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
@@ -259,7 +259,7 @@ ggplot(data = gdf) +
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Admin units overlay</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">Admin units overlay</h2>
-            <p><em>This section explains the workflow of importing and managing shapefiles using R.</em></p>
+            <p><em>Administrative unit overlays involve displaying different levels of administrative boundaries on maps, such as country, province, and district boundaries. These overlays help to provide context to spatial analysis.</em></p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
@@ -351,7 +351,7 @@ ggplot() +
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Merge shapefile with excel</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">Merge shapefile with excel</h2>
-            <p><em>This section explains the workflow of importing and managing shapefiles using R.</em></p>
+            <p><em>Merging a shapefile with Excel involves combining spatial data with attribute data from a spreadsheet. This enriches the spatial data with additional non-spatial attributes, making the visualization more informative.</em></p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
@@ -459,7 +459,7 @@ print(merged_data)
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Map by numeric variable</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">Map by numeric variable</h2>
-            <p><em>This section explains the workflow of importing and managing shapefiles using R.</em></p>
+            <p><em>Mapping by numeric variables allows for visualizing quantitative attributes across geographic regions. Different color intensities are typically used to represent the magnitude of numeric values.</em></p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
@@ -575,7 +575,7 @@ ggplot(data = merged_data) +
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Map by categorical variable</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">Map by categorical variable</</h2>
-            <p><em>This section explains the workflow of importing and managing shapefiles using R.</em></p>
+            <p><em>Mapping by categorical variables uses different colors or symbols to represent various classes or categories within the dataset. This type of map is useful for visualizing classifications.</em></p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
