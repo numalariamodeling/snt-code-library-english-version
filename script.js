@@ -124,8 +124,8 @@ print(gdf)
                 <button class="text-button" data-section="sampleR" onclick="scrollToSection('sampleR')">Output</button>
             </div>
 
-            <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / View shapefile data</h5>
-            <h2 style="color: #47B5FF; font-family: Verdana;">View shapefile data</h2>
+            <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Map by manual color coding</h5>
+            <h2 style="color: #47B5FF; font-family: Verdana;">Map by manual color coding</h2>
             <p><em>This section explains the workflow of importing and managing shapefiles using R.</em></p>
 
             <div class="round-buttons">
@@ -349,8 +349,8 @@ ggplot() +
                 <button class="text-button" data-section="sampleR" onclick="scrollToSection('sampleR')">Output</button>
             </div>
 
-            <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles</h5>
-            <h2 style="color: #47B5FF; font-family: Verdana;">Shapefiles</h2>
+            <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Merge shapefile with excel</h5>
+            <h2 style="color: #47B5FF; font-family: Verdana;">Merge shapefile with excel</h2>
             <p><em>This section explains the workflow of importing and managing shapefiles using R.</em></p>
 
             <div class="round-buttons">
@@ -457,8 +457,8 @@ print(merged_data)
                 <button class="text-button" data-section="sampleR" onclick="scrollToSection('sampleR')">Output</button>
             </div>
 
-            <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles</h5>
-            <h2 style="color: #47B5FF; font-family: Verdana;">Shapefiles</h2>
+            <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Map by numeric variable</h5>
+            <h2 style="color: #47B5FF; font-family: Verdana;">Map by numeric variable</h2>
             <p><em>This section explains the workflow of importing and managing shapefiles using R.</em></p>
 
             <div class="round-buttons">
@@ -573,8 +573,8 @@ ggplot(data = merged_data) +
                 <button class="text-button" data-section="sampleR" onclick="scrollToSection('sampleR')">Output</button>
             </div>
 
-            <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles</h5>
-            <h2 style="color: #47B5FF; font-family: Verdana;">Shapefiles</h2>
+            <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Map by categorical variable</h5>
+            <h2 style="color: #47B5FF; font-family: Verdana;">Map by categorical variable</</h2>
             <p><em>This section explains the workflow of importing and managing shapefiles using R.</em></p>
 
             <div class="round-buttons">
