@@ -46,7 +46,7 @@ As SNT matures, more quality assurance is needed such that NMCPs can be confiden
             <p><em>Viewing shapefile data is often the first step when working with spatial datasets. It involves loading and inspecting the spatial features and attributes to understand the structure and details of the data.</em></p>
 
             <div class="round-buttons">
-                <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
+                <button class="rect-button" onclick="window.location.href='https://example.com/butt';">View R EN</button>
                 <button class="rect-button" onclick="window.location.href='https://example.com/button2';">View R FR</button>
                 <button class="rect-button" onclick="window.location.href='https://example.com/button3';">View R FR</button>
                 <button class="rect-button" onclick="window.location.href='https://example.com/button4';">View St FR</button>
