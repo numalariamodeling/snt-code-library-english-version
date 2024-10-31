@@ -162,7 +162,8 @@ print(gdf)
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Basic plotting</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">Basic plotting</h2>
-            <p><em> Basic map plotting involves visualizing geographic data to understand spatial patterns. It is useful for plotting polygons, lines, and points to give a general idea of the dataset..</em></p>
+            <p><em> Basic map plotting involves visualizing geographic data to understand spatial patterns. It is useful for</em></p>
+            <p><em>plotting polygons, lines, and points to give a general idea of the dataset</em></p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
