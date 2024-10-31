@@ -682,7 +682,7 @@ window.onload = function() {
     }
 
     // Example 2: Load 'shapefiles' if URL contains '#Shapefiles'
-    if (currentUrl.includes('#shapefile_info')) {
+    if (currentUrl.includes('#shapefiles_info')) {
         loadContent('shapefile_info');
     }
 
@@ -700,14 +700,24 @@ window.onload = function() {
 
 
     // Example 5: Load 'data-management' if URL contains '#DataManagement'
-    if (currentUrl.includes('#hf')) {
-        loadContent('hf');
+    if (currentUrl.includes('#admin_units')) {
+        loadContent('admin_units');
     }
 
 
-    // Example 3: Load 'data-management' if URL contains '#DataManagement'
-    if (currentUrl.includes('#hf')) {
-        loadContent('hf');
+    // Example 6: Load 'data-management' if URL contains '#DataManagement'
+    if (currentUrl.includes('#merge_excel')) {
+        loadContent('merge_excel');
+    }
+
+     // Example 7: Load 'data-management' if URL contains '#DataManagement'
+    if (currentUrl.includes('#map_numeric')) {
+        loadContent('map_numeric');
+    }
+
+     // Example 8: Load 'data-management' if URL contains '#DataManagement'
+    if (currentUrl.includes('#map_categorical')) {
+        loadContent('map_categorical');
     }
 };
 
