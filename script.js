@@ -261,7 +261,9 @@ ggplot(data = gdf) +
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Admin units overlay</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">Admin units overlay</h2>
-            <p><em>Administrative unit overlays involve displaying different levels of administrative boundaries on maps, such as country, province, and district boundaries. These overlays help to provide context to spatial analysis.</em></p>
+            <p><em>Administrative unit overlays involve displaying different levels of administrative boundaries on maps,</em></p>
+            <p><em>such as country, province, and district boundaries. These overlays help to provide context to spatial</em></p>
+            <p><em>analysis.</em></p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
