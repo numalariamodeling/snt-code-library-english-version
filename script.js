@@ -682,9 +682,28 @@ window.onload = function() {
     }
 
     // Example 2: Load 'shapefiles' if URL contains '#Shapefiles'
-    if (currentUrl.includes('#shapefiles')) {
-        loadContent('shapefiles');
+    if (currentUrl.includes('#shapefile_info')) {
+        loadContent('shapefile_info');
     }
+
+    // Example 3: Load 'data-management' if URL contains '#DataManagement'
+    if (currentUrl.includes('#basic_plot')) {
+        loadContent('basic_plot');
+    }
+
+
+    // Example 4: Load 'data-management' if URL contains '#DataManagement'
+    if (currentUrl.includes('#manual_color')) {
+        loadContent('manual_color');
+    }
+
+
+
+    // Example 5: Load 'data-management' if URL contains '#DataManagement'
+    if (currentUrl.includes('#hf')) {
+        loadContent('hf');
+    }
+
 
     // Example 3: Load 'data-management' if URL contains '#DataManagement'
     if (currentUrl.includes('#hf')) {
