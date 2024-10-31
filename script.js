@@ -571,7 +571,7 @@ ggplot(data = merged_data) +
             </pre>
 
             <h3 id="sampleR">Output</h3>
-            <img src="https://raw.githubusercontent.com/mohamedsillahkanu/SNT-Code-Library/902afc6c44ec5806d47da4e9fb610cee365c9bf3/tesing%20replace.png" alt="Output">
+            <img src="https://raw.githubusercontent.com/numalariamodeling/snt-code-library-english-version/e59b64b04df0427ab5bf7a8cf8bb30120592a9f3/testing%20rate%20final.png" alt="Output">
             
         `,
 
