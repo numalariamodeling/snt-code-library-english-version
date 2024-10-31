@@ -314,8 +314,8 @@ st_crs(adm3) <- 4326  # Set CRS to WGS84 for adm3
 
 # Step 6: Plot the adm1 and adm3 layers together using ggplot2
 ggplot() +
-  geom_sf(data = adm1, fill = NA, color = "blue", lwd = 1.8) +  # Plot adm1 boundaries in blue
-  geom_sf(data = adm3, fill = NA, color = "red", size = 1) +   # Plot adm3 boundaries in red
+  geom_sf(data = adm1, fill = NA, color = "#47B5FF", lwd = 1.8) +  # Plot adm1 boundaries in lightblue
+  geom_sf(data = adm3, fill = NA, color = "black", size = 1) +   # Plot adm3 boundaries in black
   theme_minimal() +
   theme(
     panel.grid = element_blank(),   # Remove grid lines
@@ -326,8 +326,8 @@ ggplot() +
   ggtitle("Overlay of Administrative Units (ADM1 and ADM3)")
 
 # Explanation:
-# - 'geom_sf(data = adm1, fill = NA, color = "blue")' plots the adm1 boundaries in blue without filling.
-# - 'geom_sf(data = adm3, fill = NA, color = "red")' plots the adm3 boundaries in red without filling.
+# - 'geom_sf(data = adm1, fill = NA, color = "#47B5FF")' plots the adm1 boundaries in blue without filling.
+# - 'geom_sf(data = adm3, fill = NA, color = "black")' plots the adm3 boundaries in red without filling.
 # - 'theme_minimal()' sets a simple theme, and 'theme()' is used to remove unwanted elements like grid lines and axis ticks.
 # - 'ggtitle()' adds a title and centers it for better visual presentation.
                 </code>
@@ -574,7 +574,7 @@ ggplot(data = merged_data) +
             </div>
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Map by categorical variable</h5>
-            <h2 style="color: #47B5FF; font-family: Verdana;">Map by categorical variable</</h2>
+            <h2 style="color: #47B5FF; font-family: Verdana;">Map by categorical variable</h2>
             <p><em>Mapping by categorical variables uses different colors or symbols to represent various classes or categories within the dataset. This type of map is useful for visualizing classifications.</em></p>
 
             <div class="round-buttons">
