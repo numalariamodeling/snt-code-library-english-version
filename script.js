@@ -112,58 +112,7 @@ print(gdf)
             <h3 id="sampleR">Output</h3>
             <img src="https://github.com/mohamedsillahkanu/SNT-Code-Library/raw/31b914c1115de3ccd6c8045946adc4a84eadc4bb/print%20gdf%20in%20R.png" alt="Output">
             
-        `,
-
-
-        manual_color: `
-            
-            <div class="fixed-buttons id="fixedButtons">
-                
-                <button class="text-button" style="color: white;">R</button>
-                <button class="text-button">On this page:</button>
-                <button class="text-button" data-section="fullCode" onclick="scrollToSection('fullCode')">Code</button>
-                <button class="text-button" data-section="sampleR" onclick="scrollToSection('sampleR')">Output</button>
-            </div>
-
-            <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Map by manual color coding</h5>
-            <h2 style="color: #47B5FF; font-family: Verdana;">Map by manual color coding</h2>
-            <p><em>Manual color coding allows specific colors to be assigned to categories or ranges, providing more</em></p> 
-            <p><em>control over how the data is visually represented. This approach can be used to highlight specific data</em></p>
-            <p><em>or create a consistent color scheme for presentation.</em></p>
-
-            <div class="round-buttons">
-                <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
-                <button class="rect-button" onclick="window.location.href='https://example.com/button2';">View R FR</button>
-                <button class="rect-button" onclick="window.location.href='https://example.com/button3';">View R FR</button>
-                <button class="rect-button" onclick="window.location.href='https://example.com/button4';">View St FR</button>
-                <button class="rect-button" onclick="window.location.href='https://example.com/button5';">View St EN</button>
-            </div>
-            <h5 style="color: white;">#</h5>
-            <h3 id="fullCode">Code</h3>
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-            <pre id="codeBlock">
-                <code>
-
-                </code>
-                <button class="copy-button" onclick="copyCode()">Copy Code</button> <!-- Copy button positioned here -->
-            </pre>
-
-            <h3 id="sampleR">Output</h3>
-            <img src="https://raw.githubusercontent.com/mohamedsillahkanu/SNT-Code-Library/bff06d61deac1142cf599cca3fd6ab20f94d4c6d/manual%20color%20coding.png" alt="Output">
-            
+           
         `,
         basic_plot: `
             
