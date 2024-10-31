@@ -684,7 +684,7 @@ window.onload = function() {
 
     // Example 2: Load 'shapefiles' if URL contains '#Shapefiles'
     if (currentUrl.includes('#shapefiles_info')) {
-        loadContent('shapefile_info');
+        loadContent('shapefiles_info');
     }
 
     // Example 3: Load 'data-management' if URL contains '#DataManagement'
