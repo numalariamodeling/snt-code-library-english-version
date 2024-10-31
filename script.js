@@ -294,8 +294,8 @@ ggplot() +
   ggtitle("Overlay of Administrative Units (ADM1 and ADM3)")
 
 # Explanation:
-# - 'geom_sf(data = adm1, fill = NA, color = "#47B5FF")' plots the adm1 boundaries in blue without filling.
-# - 'geom_sf(data = adm3, fill = NA, color = "black")' plots the adm3 boundaries in red without filling.
+# - 'geom_sf(data = adm1, fill = NA, color = "#47B5FF")' plots the adm1 boundaries in lightblue without filling.
+# - 'geom_sf(data = adm3, fill = NA, color = "black")' plots the adm3 boundaries in black without filling.
 # - 'theme_minimal()' sets a simple theme, and 'theme()' is used to remove unwanted elements like grid lines and axis ticks.
 # - 'ggtitle()' adds a title and centers it for better visual presentation.
                 </code>
