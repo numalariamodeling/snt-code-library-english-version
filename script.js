@@ -357,7 +357,10 @@ ggplot() +
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Merge shapefile with excel</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">Merge shapefile with excel</h2>
-            <p><em>Merging a shapefile with Excel involves combining spatial data with attribute data from a spreadsheet. This enriches the spatial data with additional non-spatial attributes, making the visualization more informative.</em></p>
+            <p><em>Merging a shapefile with Excel involves combining spatial data with attribute data from a spreadsheet</em></p>
+            <p><em>This enriches the spatial data with additional non-spatial attributes, making the visualization more</em></p>
+            <p><em>informative</em></p>
+            
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
