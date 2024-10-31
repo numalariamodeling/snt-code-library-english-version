@@ -46,11 +46,11 @@ As SNT matures, more quality assurance is needed such that NMCPs can be confiden
             <p><em>Viewing shapefile data is often the first step when working with spatial datasets. It involves loading and inspecting the spatial features and attributes to understand the structure and details of the data.</em></p>
 
             <div class="round-buttons">
-                <button class="rect-button" onclick="window.location.href='https://example.com/butt';">View R EN</button>
-                <button class="rect-button" onclick="window.location.href='https://example.com/button2';">View R FR</button>
-                <button class="rect-button" onclick="window.location.href='https://example.com/button3';">View R FR</button>
-                <button class="rect-button" onclick="window.location.href='https://example.com/button4';">View St FR</button>
-                <button class="rect-button" onclick="window.location.href='https://example.com/button5';">View St EN</button>
+                <button class="rect-button" onclick="window.location.href='https://numalariamodeling.github.io/snt-python-english-version/#shapefile_info';">View py EN</button>
+                <button class="rect-button" onclick="window.location.href='https://numalariamodeling.github.io/snt-python-french-version/#shapefile_info';">View py FR</button>
+                <button class="rect-button" onclick="window.location.href='https://numalariamodeling.github.io/snt-code-library-french-version/#shapefile_info';">View R FR</button>
+                <button class="rect-button" onclick="window.location.href='https://numalariamodeling.github.io/snt-stata-french-version/#shapefile_info';">View St FR</button>
+                <button class="rect-button" onclick="window.location.href='https://numalariamodeling.github.io/snt-stata-english-version/#shapefile_info';">View St EN</button>
             </div>
             <h5 style="color: white;">#</h5>
             <h3 id="fullCode">Code</h3>
