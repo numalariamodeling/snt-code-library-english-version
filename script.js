@@ -127,7 +127,9 @@ print(gdf)
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Map by manual color coding</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">Map by manual color coding</h2>
-            <p><em>Manual color coding allows specific colors to be assigned to categories or ranges, providing more control over how the data is visually represented. This approach can be used to highlight specific data or create a consistent color scheme for presentation.</em></p>
+            <p><em>Manual color coding allows specific colors to be assigned to categories or ranges, providing more</em></p> 
+            <p><em>control over how the data is visually represented. This approach can be used to highlight specific data</em></p>
+            <p><em>or create a consistent color scheme for presentation.</em></p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
@@ -468,7 +470,8 @@ print(merged_data)
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Map by numeric variable</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">Map by numeric variable</h2>
-            <p><em>Mapping by numeric variables allows for visualizing quantitative attributes across geographic regions. Different color intensities are typically used to represent the magnitude of numeric values.</em></p>
+            <p><em>Mapping by numeric variables allows for visualizing quantitative attributes across geographic regions</em></p>
+            <p><em>Different color intensities are typically used to represent the magnitude of numeric values</em></p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
@@ -584,7 +587,8 @@ ggplot(data = merged_data) +
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / Map by categorical variable</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">Map by categorical variable</h2>
-            <p><em>Mapping by categorical variables uses different colors or symbols to represent various classes or categories within the dataset. This type of map is useful for visualizing classifications.</em></p>
+            <p><em>Mapping by categorical variables uses different colors or symbols to represent various classes or</em></p>
+            <p><em>categories within the dataset. This type of map is useful for visualizing classifications.</em></p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://example.com/button1';">View R EN</button>
