@@ -336,7 +336,7 @@ ggplot() +
             </pre>
 
             <h3 id="sampleR">Output</h3>
-            <img src=https://raw.githubusercontent.com/numalariamodeling/snt-code-library-english-version/b1eb6edf32dad556c200b2823204e1689f77155b/adminUnits.png" alt="Output">
+            <img src= "https://raw.githubusercontent.com/numalariamodeling/snt-code-library-english-version/b1eb6edf32dad556c200b2823204e1689f77155b/adminUnits.png" alt="Output">
           
             
         `,
