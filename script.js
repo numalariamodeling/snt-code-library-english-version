@@ -43,7 +43,8 @@ As SNT matures, more quality assurance is needed such that NMCPs can be confiden
 
             <h5 style="font-weight: normal; font-family: Verdana;">Data Assembly and Management / Shapefiles / View shapefile data</h5>
             <h2 style="color: #47B5FF; font-family: Verdana;">View shapefile data</h2>
-            <p><em>Viewing shapefile data is often the first step when working with spatial datasets. It involves loading and inspecting the spatial features and attributes to understand the structure and details of the data.</em></p>
+            <p><em>Viewing shapefile data is often the first step when working with spatial datasets. It involves loading</em></p> 
+            <p><em>and inspecting the spatial features and attributes to understand the structure and details of the data</em></p>
 
             <div class="round-buttons">
                 <button class="rect-button" onclick="window.location.href='https://numalariamodeling.github.io/snt-python-english-version/#shapefile_info';">View py EN</button>
